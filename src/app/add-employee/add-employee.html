@@ -1,0 +1,11 @@
+<div class="card">
+  <h2>Add Employee</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div >
+      <input placeholder="Name" [(ngModel)]="employee.name" name="name" required>
+      <input placeholder="Emp ID" [(ngModel)]="employee.empId" name="empId" required>
+      <input placeholder="Domain" [(ngModel)]="employee.domain" name="domain">
+      <button class="btn btn-primary" type="submit">Add</button>
+    </div>
+  </form>
+</div>

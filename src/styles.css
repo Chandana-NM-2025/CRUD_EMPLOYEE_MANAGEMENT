@@ -1,1 +1,238 @@
 /* You can add global styles to this file, and also import other style files */
+/* ===== Global ===== */
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  background-color: #111; /* dark background */
+  padding: 14px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff; /* bright blue for logo */
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 20px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #333;
+  color: #00d8ff; /* hover highlight */
+}
+
+
+/* ===== Card ===== */
+.card {
+  max-width: 5000px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #222; /* dark card */
+  color: #0a0a0a;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  color: #00d8ff;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #faf8f8;
+  font-size: 16px;
+  background-color: #ece9e9;
+  color: #000000;
+  transition: all 0.2s ease;
+}
+
+input:focus {
+  border-color: #00d8ff;
+  box-shadow: 0 0 6px rgba(0,216,255,0.3);
+  outline: none;
+}
+button.btn{
+  padding: 12px;
+  margin: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #1c98ad;
+  color: #111;
+  cursor: pointer;
+}
+
+button.btn-primary {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #1c98ad;
+  color: #111;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button.btn-primary:hover {
+  background-color: #009ecf;
+  transform: translateY(-1px);
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  padding: 13px 14px;
+  margin: 7px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  background-color: #aa1c2a;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #851823;    
+  transform: translateY(-1px);
+}
+
+/* ===== Inputs / Selects ===== */
+input, select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0,123,255,0.3);
+}
+
+/* ===== Tables ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* ===== Action Buttons inside table ===== */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+
+
+
+
+/* ===== Hero Section ===== */
+
+.hero {
+  background: linear-gradient(135deg, #007bff, #00d8ff);
+  color: #fff;
+  padding: 80px 200px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
